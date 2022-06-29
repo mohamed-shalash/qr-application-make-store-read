@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EncryptActivity"
+    android:background="#16A25B">
+
+    <EditText
+        android:id="@+id/QR_main_ACT_ET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:ems="10"
+        android:inputType="textMultiLine|textPersonName" />
+
+    <Button
+        android:id="@+id/QR_main_ACT_Generate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="generate" />
+
+    <ImageView
+        android:id="@+id/QR_main_ACT_imageView"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_margin="20dp"
+        app:srcCompat="@drawable/enhanced_encryption_data" />
+
+    <Button
+        android:id="@+id/QR_main_ACT_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="save" />
+
+</LinearLayout>

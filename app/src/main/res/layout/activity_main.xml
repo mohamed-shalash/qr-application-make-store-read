@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#16A25B"
+            android:layout_weight="1"
+            android:padding="20dp">
+
+            <Button
+                android:id="@+id/main_encryption"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/enhanced_encryption_data"
+                android:backgroundTint="#FFFDFD" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#16909D"
+            android:padding="20dp">
+
+            <Button
+                android:id="@+id/main_no_encryption"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/no_encryption_24" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/HelpButton"
+        android:text="Help!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@color/white"/>
+
+    <CheckBox
+        android:id="@+id/CheckBoxProMode"
+        android:text="Pro Mode On"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/HelpButton"
+        android:layout_marginBottom="8dp"
+        android:textColor="@android:color/white" />
+</RelativeLayout>
